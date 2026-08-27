@@ -10,6 +10,7 @@
     <meta property="og:type" content="website">
     <title>DUSMP — Minecraft SMP</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="./status.js" defer></script>
   </head>
   <body>
     <main class="world">
@@ -36,6 +37,12 @@
             <dd>17862</dd>
           </div>
         </dl>
+
+        <div class="server-status" id="server-status" role="status" aria-live="polite">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span class="status-label">Checking server…</span>
+          <strong class="player-count">— players</strong>
+        </div>
 
         <nav class="link-grid" aria-label="DUSMP links">
           <a class="pixel-button discord" href="https://discord.gg/MRQQfkpXT3"><span aria-hidden="true">◆</span>Discord</a>

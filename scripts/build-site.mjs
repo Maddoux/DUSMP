@@ -173,6 +173,7 @@ const posts = await Promise.all(filenames.map(async (filename) => {
 posts.sort((a, b) => b.date.localeCompare(a.date));
 
 await cp(path.join(projectRoot, 'src', 'index.html'), path.join(outputDir, 'index.html'));
+await cp(path.join(projectRoot, 'src', 'status.js'), path.join(outputDir, 'status.js'));
 await cp(path.join(projectRoot, 'app', 'globals.css'), path.join(outputDir, 'styles.css'));
 await writeFile(path.join(outputDir, 'announcements', 'index.html'), announcementsPage(posts));
 await writeFile(path.join(outputDir, '.nojekyll'), '');

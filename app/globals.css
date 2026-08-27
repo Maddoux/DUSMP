@@ -159,6 +159,48 @@ h1 {
   white-space: nowrap;
 }
 
+.server-status {
+  display: flex;
+  min-height: 2.55rem;
+  align-items: center;
+  gap: .55rem;
+  margin-top: .65rem;
+  padding: .55rem .75rem;
+  color: #5b675b;
+  background: rgba(238, 232, 204, .72);
+  border: 2px solid #769070;
+  font-size: .68rem;
+  text-align: left;
+}
+
+.status-dot {
+  width: .68rem;
+  height: .68rem;
+  flex: 0 0 auto;
+  background: #9a936f;
+  border: 2px solid #5f634f;
+  box-shadow: inset 2px 2px rgba(255,255,255,.28);
+}
+
+.server-status[data-state="online"] .status-dot {
+  background: #64b747;
+  border-color: #376c30;
+}
+
+.server-status[data-state="offline"] .status-dot {
+  background: #c85f4b;
+  border-color: #78382f;
+}
+
+.status-label { font-weight: 700; }
+
+.player-count {
+  margin-left: auto;
+  color: #285d31;
+  font-size: .72rem;
+  white-space: nowrap;
+}
+
 .link-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -347,6 +389,8 @@ h1 {
   .server-detail:first-child { grid-column: 1 / -1; border-bottom: 2px solid #9ab288; }
   .server-detail + .server-detail { border-left: 0; }
   .server-detail:nth-child(3) { border-left: 2px solid #9ab288; }
+  .server-status { align-items: flex-start; flex-wrap: wrap; }
+  .player-count { margin-left: auto; }
   .news { grid-column: auto; }
   .tree { opacity: .72; transform: scale(.72); }
   .tree-left { left: -3rem; }
