@@ -80,17 +80,6 @@ a { color: inherit; }
 .cloud-two { top: 32%; --scale: .72; animation-delay: -23s; animation-duration: 45s; opacity: .7; }
 .cloud-three { top: 8%; --scale: .48; animation-delay: -31s; animation-duration: 52s; opacity: .58; }
 
-.far-hills {
-  position: absolute;
-  inset: auto -10vw 7rem;
-  height: 14rem;
-  z-index: -2;
-  opacity: .42;
-  background:
-    linear-gradient(135deg, transparent 44%, #77ad73 45% 60%, transparent 61%) 0 100% / 24rem 14rem repeat-x,
-    linear-gradient(45deg, transparent 40%, #669b67 41% 62%, transparent 63%) 9rem 100% / 30rem 11rem repeat-x;
-}
-
 .hero-card {
   width: min(31rem, 100%);
   margin-top: -4vh;
