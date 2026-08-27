@@ -121,7 +121,7 @@ h1 {
 
 .server-info {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 6rem;
+  grid-template-columns: minmax(0, 1fr) 5.25rem 7.5rem;
   margin: 1.45rem 0 0;
   padding: 0;
   overflow: hidden;
@@ -341,9 +341,12 @@ h1 {
   .world { padding-bottom: 7rem; }
   .hero-card { margin-top: -2rem; padding: 2rem 1.35rem; border-width: 3px; box-shadow: 5px 5px 0 rgba(23, 50, 35, .25); }
   .link-grid { grid-template-columns: 1fr; }
-  .server-info { grid-template-columns: minmax(0, 1fr) 5.25rem; }
+  .server-info { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .server-detail { padding-inline: .65rem; }
   .server-detail dd { font-size: .75rem; }
+  .server-detail:first-child { grid-column: 1 / -1; border-bottom: 2px solid #9ab288; }
+  .server-detail + .server-detail { border-left: 0; }
+  .server-detail:nth-child(3) { border-left: 2px solid #9ab288; }
   .news { grid-column: auto; }
   .tree { opacity: .72; transform: scale(.72); }
   .tree-left { left: -3rem; }
