@@ -143,7 +143,7 @@ function announcementsPage(posts) {
           <a class="brand" href="../">DUSMP</a>
           <nav aria-label="DUSMP links">
             <a href="https://discord.gg/MRQQfkpXT3">Discord</a>
-            <a href="https://map.dusmp.com">Map</a>
+            <a href="http://170.23.51.227:17863/">Map</a>
             <a aria-current="page" href="./">Announcements</a>
           </nav>
         </header>
